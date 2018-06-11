@@ -10,8 +10,8 @@ import "../../math/SafeMath.sol";
 
 /**
  * @title TokenVesting
- * @dev A token holder contract that can release its token balance gradually like a
- * typical vesting scheme, with a cliff and vesting period. Optionally revocable by the
+ * @dev A token holder contract（持有者合约） that can release its token balance gradually（逐步的） like a
+ * typical（典型） vesting scheme（授予方案）, with a cliff（） and vesting period(授予周期). Optionally revocable（随意撤销的） by the
  * owner.
  */
 contract TokenVesting is Ownable {
@@ -39,7 +39,7 @@ contract TokenVesting is Ownable {
    * of the balance will have vested.
    * @param _beneficiary address of the beneficiary to whom vested tokens are transferred
    * @param _cliff duration in seconds of the cliff in which tokens will begin to vest
-   * @param _start the time (as Unix time) at which point vesting starts 
+   * @param _start the time (as Unix time) at which point vesting starts
    * @param _duration duration in seconds of the period in which the tokens will vest
    * @param _revocable whether the vesting is revocable or not
    */
